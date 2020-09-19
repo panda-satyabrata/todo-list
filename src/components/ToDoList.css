@@ -47,52 +47,7 @@ body {
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 450px) {
-  .todo-list-wrapper {
-    font-size: 17px;
-    max-width: 18em;
-    margin: 0 1em 0 1em;
-  }
-
-  .add-todo-task-container {
-    margin: auto;
-    /* font-size: 0.9 * var(--font-size); */
-  }
-
-  .add-icon {
-    width: 48px;
-    height: 40px;
-  }
-
-  .delete-icon {
-    width: 46px;
-    height: 40px;
-  }
-}
-
-/* @media screen and (max-width: 400px) {
-  .todo-list-wrapper {
-    font-size: 17px;
-    max-width: 18em;
-    margin: 0 1em 0 1em;
-  }
-
-  .add-todo-task-container {
-    margin: auto;
-    /* font-size: 0.9 * var(--font-size); */
-/* }
-
-  .add-icon {
-    width: 48px;
-    height: 40px;
-  }
-
-  .delete-icon {
-    width: 46px;
-    height: 40px;
-  }
-} */
-*/ .todo-list-wrapper :last-child {
+.todo-list-wrapper :last-child {
   border-bottom: none;
 }
 
@@ -271,4 +226,31 @@ body {
 
 .add-button:focus {
   outline: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .todo-list-wrapper {
+    font-size: 17px;
+    max-width: 18em;
+    margin: 0 1em 0 1em;
+  }
+
+  .add-todo-task-container {
+    margin: auto;
+    /* font-size: 0.9 * var(--font-size); */
+  }
+
+  .add-icon {
+    width: 48px;
+    height: 40px;
+  }
+
+  .delete-icon {
+    width: 46px;
+    height: 40px;
+  }
+
+  .todo {
+    width: 60%;
+  }
 }
