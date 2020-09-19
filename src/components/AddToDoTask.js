@@ -20,7 +20,7 @@ function AddToDoTask() {
 
   return (
     <div className="add-todo-task-container">
-      <form className="task-form" onSubmit={handleSubmit}>
+      <form className="task-form" onSubmit={handleSubmit} autoComplete="off">
         <input
           className="task-input"
           type="text"
@@ -28,6 +28,7 @@ function AddToDoTask() {
           value={task}
           placeholder="What to do today?"
           onChange={(event) => setTask(event.target.value)}
+          autoComplete="off"
         />
         <button className="add-button">
           <svg
